@@ -1,0 +1,95 @@
+.newsCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 30px;
+    gap: 15px;
+}
+.newsCards .card{
+    width: 350px;
+}
+.newsCards .card img{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+.newsCards .card .card-body a{
+    background-color: #392467;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: sticky !important;
+    top: 0px;
+    z-index: 1;    
+
+}
+
+nav .container-fluid{
+    background-color: #392467;
+    color: #FFF2F2;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky !important;
+    top: 0px;
+    width: 100%;
+    /* height: 75px; */
+}
+nav .container-fluid ul{
+    margin: auto;
+    width: 20%;
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 10px; */
+    gap: 10px;
+}
+nav .container-fluid ul li a{
+    font-size: 17px;
+    font-weight: 600;
+    color: #FFF2F2 !important; 
+    cursor: pointer;
+}
+nav .container-fluid form button{
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFF2F2;
+    border-color: #FFF2F2 ;
+    background-color: #392467;
+    transition: all ease 0.5s;
+    /* color: #; */
+}
+nav .container-fluid form button:hover,
+nav .container-fluid form button:active,
+nav .container-fluid form button:focus{
+    background-color: #FFF2F2;
+    color: #392467 !important;
+    border-color: #392467;
+    transform: scale((0.8));
+}
+nav .container-fluid button {
+    border: none;
+    color: #FFF2F2 !important;
+}
+nav .container-fluid button:hover,
+nav .container-fluid button:active,
+nav .container-fluid button:focus{
+    border-style: none;
+    border: none;
+}
+nav .logo h3 span img{
+    height: 40px;
+    margin: 0 -14px;
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
